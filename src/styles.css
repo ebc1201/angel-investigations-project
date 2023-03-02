@@ -183,6 +183,10 @@ main {
   background: #12101d;
 }
 
+main img {
+  filter: saturate(0.7);
+}
+
 main h2 {
   font-family: "Poppins";
   font-style: normal;
