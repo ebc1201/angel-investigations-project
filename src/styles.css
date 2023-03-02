@@ -56,7 +56,9 @@ body {
 .card-p {
   padding: 20px 20px;
 }
-
+card .learn-more .btn {
+  margin-bottom: 0;
+}
 main h4 {
   font-size: 24px;
   line-height: 1.5;
@@ -68,10 +70,17 @@ main h4 {
   display: block;
   text-align: center;
   text-decoration: none;
-  background: #885df1;
+  background-color: #885df1;
   border-radius: 100px;
   color: white;
   padding: 16px 32px;
+  transition: 200ms all ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid #885df1;
+  background-color: white;
+  color: #885df1;
 }
 
 .img-responsive {
@@ -84,6 +93,7 @@ main h4 {
 
 blockquote {
   font-size: 12px;
+  opacity: 0.6;
 }
 
 section {
@@ -101,13 +111,21 @@ section.secondary {
     ),
     url(../images/cast3.jpeg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 
 section.secondary h2 {
   background: rgba(91, 213, 227, 0.15);
   padding: 2px 6px;
   width: 130px;
+  height: 24px;
+  margin: 0 auto;
+}
+
+section.videos h2 {
+  background: rgba(91, 213, 227, 0.15);
+  padding: 2px 6px;
+  width: 84px;
   height: 24px;
   margin: 0 auto;
 }
@@ -209,6 +227,10 @@ main P {
   padding: 16px 32px;
 }
 
+.youtube-embeds {
+  margin: 30px 0;
+}
+
 footer {
   color: #ffffff;
   background-image: linear-gradient(rgba(2, 4, 3, 0.8), rgba(2, 4, 3, 0.8)),
@@ -275,5 +297,9 @@ footer p {
 
   section {
     padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
   }
 }
