@@ -285,6 +285,38 @@ footer p {
   opacity: 0.8;
 }
 
+@media (max-width: 1200px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   header {
     padding: 60px 0;
@@ -299,8 +331,45 @@ footer p {
     font-size: 20px;
   }
 
-  h3 {
-    font-size: 12px;
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  .card-header img {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  main h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  main p {
+    text-align: center;
+  }
+
+  main img {
+    display: none;
   }
 
   .grid {
