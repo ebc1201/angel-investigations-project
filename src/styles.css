@@ -10,13 +10,25 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-1-narrow {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.img-responsive {
+  max-width: 100%;
 }
 
 section {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -60,10 +72,50 @@ header a {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  background: #520707;
+  background: #885df1;
   border-radius: 100px;
   color: white;
   padding: 16px 32px;
+}
+
+main {
+  background: #12101d;
+}
+
+main h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #5bd5e3;
+  margin: 0;
+  background: rgba(91, 213, 227, 0.15);
+  padding: 2px 6px;
+  gap: 10px;
+  width: 323px;
+  height: 24px;
+}
+
+main h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
+
+main P {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #f9f4ff;
+  opacity: 0.7;
 }
 
 footer {
@@ -72,7 +124,6 @@ footer {
     url("../images/losangeles.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 100px 0;
 }
 
 footer h3 {
@@ -120,5 +171,18 @@ footer p {
 
   header h2 {
     font-size: 20px;
+  }
+
+  h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px;
   }
 }
