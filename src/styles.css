@@ -130,7 +130,9 @@ section.videos h2 {
   height: 24px;
   margin: 0 auto;
 }
-
+.angel-logo {
+  filter: invert();
+}
 header {
   background-image: linear-gradient(
       360deg,
